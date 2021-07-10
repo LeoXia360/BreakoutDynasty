@@ -26,6 +26,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "deploy": "aws s3 sync build/ s3://breakout-website --acl public-read",
     "eject": "craco eject"
   },
   "eslintConfig": {
