@@ -24,13 +24,13 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="https://www.youtube.com/channel/UC18-RzuwrIImbaGVjbHoRgw" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Youtube</Link>
+                <a href="https://www.youtube.com/channel/UC18-RzuwrIImbaGVjbHoRgw" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Youtube</a>
               </li>
               <li className="mb-2">
-                <Link to="https://www.tiktok.com/@breakoutdynasty?" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">TikTok</Link>
+                <a href="https://www.tiktok.com/@breakoutdynasty?" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">TikTok</a>
               </li>
               <li className="mb-2">
-                <Link to="https://twitter.com/BreakoutDynasty" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Twitter</Link>
+                <a href="https://twitter.com/BreakoutDynasty" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Twitter</a>
               </li>
             </ul>
           </div>

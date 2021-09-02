@@ -24,13 +24,13 @@ function HeroHome() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Say goodbye to the guessing game of old school techniques. We help you become the best fantasy football player in your league through new age analytical insights.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-red-500 hover:bg-red-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://www.youtube.com/channel/UC18-RzuwrIImbaGVjbHoRgw">Youtube</a>
+                  <a className="btn text-white bg-red-500 hover:bg-red-700 w-full mb-4 sm:w-auto sm:ml-4" href="https://www.youtube.com/channel/UC18-RzuwrIImbaGVjbHoRgw">Youtube</a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-700 w-full sm:w-auto sm:ml-4" href="https://www.tiktok.com/@breakoutdynasty?">TikTok</a>
+                  <a className="btn text-white bg-gray-900 hover:bg-gray-700 w-full mb-4 sm:w-auto sm:ml-4" href="https://www.tiktok.com/@breakoutdynasty?">TikTok</a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-blue-500 hover:bg-blue-700 w-full sm:w-auto sm:ml-4" href="https://twitter.com/BreakoutDynasty">Twitter</a>
+                  <a className="btn text-white bg-blue-500 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:ml-4" href="https://twitter.com/BreakoutDynasty">Twitter</a>
                 </div>
 
               </div>
