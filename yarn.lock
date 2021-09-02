@@ -1201,7 +1201,11 @@
     "exec-sh" "^0.3.2"
     "minimist" "^1.2.0"
 
+<<<<<<< HEAD
 "@craco/craco@^6.1.2":
+=======
+"@craco/craco@^6.1.1":
+>>>>>>> c20d3299901409892b4a05f397af91862694783c
   "integrity" "sha512-GlQZn+g+yNlaDvIL5m6mcCoBGyFDwO4kkNx3fNFf98wuldkdWyBFoQbtOFOIb4gvkTh4VntOOxtJEoZfKs7XXw=="
   "resolved" "https://registry.npmjs.org/@craco/craco/-/craco-6.1.2.tgz"
   "version" "6.1.2"
