@@ -32,8 +32,8 @@ function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">What we do</h1>
-            <p className="text-xl text-gray-600">Our goal is to empower individuals to create their own process using analytical techniques we've found that work. We've created a community to introduce new ideas and share knowledge to make data easily digestible, even for a beginner. </p>
+            <h1 className="h2 mb-4">How The Breakout Works</h1>
+            <p className="text-xl text-gray-600">We empower people to learn the very football analytics used by NFL teams. Whether its to make betting models or to win your fantasy leagues, our content makes complex topics easily digestible, even for a beginner.</p>
           </div>
 
           {/* Section content */}
@@ -42,8 +42,8 @@ function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Diverse offering of products</h3>
-                <p className="text-xl text-gray-600">Engaging the community is hard. We've come up with a suite of products to help engage each fantasy football market segment</p>
+                <h3 className="h3 mb-3">Content Designed for You</h3>
+                <p className="text-xl text-gray-600">Engaging the community is hard. Our content is tailored so you can learn the way you do best.</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -64,7 +64,7 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">TikTok</div>
-                    <div className="text-gray-600">Quick prospect bites and digestible analytical content with fresh bold takes</div>
+                    <div className="text-gray-600">Bold 1 minute takes and analysis on player prospects, fantasy moves, and team analysis</div>
                   </div>
                 </a>
                 <a
@@ -74,7 +74,7 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Twitter</div>
-                    <div className="text-gray-600">Deeper community engagement and personal contact with Leo Xia and Abhi Gupta</div>
+                    <div className="text-gray-600">Engaging the community through deep dive threads, personal interactions, and answering your questions directly</div>
                   </div>
                 </a>
               </div>
