@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@craco/craco": "^6.1.2",
-=======
-    "@craco/craco": "^6.1.1",
->>>>>>> c20d3299901409892b4a05f397af91862694783c
     "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -29,13 +25,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-<<<<<<< HEAD
     "deploy": "aws s3 sync build/ s3://breakout-website",
+    "beta": "aws s3 sync build/ s3://breakout-website-beta",
     "test": "craco test",
-=======
-    "test": "craco test",
-    "deploy": "aws s3 sync build/ s3://breakout-website --acl public-read",
->>>>>>> c20d3299901409892b4a05f397af91862694783c
     "eject": "craco eject"
   },
   "eslintConfig": {

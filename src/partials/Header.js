@@ -31,7 +31,6 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-<<<<<<< HEAD
                 <a href="https://www.youtube.com/channel/UC18-RzuwrIImbaGVjbHoRgw" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Youtube</a>
               </li>
               <li>
@@ -39,15 +38,6 @@ function Header() {
               </li>
               <li>
                 <a href="https://twitter.com/BreakoutDynasty" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Twitter</a>
-=======
-                <Link to="https://www.youtube.com/channel/UC18-RzuwrIImbaGVjbHoRgw" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Youtube</Link>
-              </li>
-              <li>
-                <Link to="https://www.tiktok.com/@breakoutdynasty?" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">TikTok</Link>
-              </li>
-              <li>
-                <Link to="https://twitter.com/BreakoutDynasty" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Twitter</Link>
->>>>>>> c20d3299901409892b4a05f397af91862694783c
               </li>
               {
               //
