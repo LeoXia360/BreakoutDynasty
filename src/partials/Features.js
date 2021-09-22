@@ -5,21 +5,6 @@ import Transition from '../utils/Transition.js';
 
 function Features() {
 
-  const [tab, setTab] = useState(1);
-
-  const tabs = useRef(null);
-
-  const heightFix = () => {
-    if (tabs.current.children[tab]) {
-      tabs.current.style.height = tabs.current.children[tab - 1].offsetHeight + 'px'
-    }
-  }
-
-  useEffect(() => {
-    heightFix()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab])
-
   return (
     <section className="relative">
 
@@ -37,109 +22,53 @@ function Features() {
           </div>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
-
-            {/* Content */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Content Designed for You</h3>
-                <p className="text-xl text-gray-600">Engaging the community is hard. Our content is tailored so you can learn the way you do best.</p>
+          <div>
+            <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
+              <div className="flex flex-col justify-center">
+                <ReactPlayer url="https://www.youtube.com/watch?v=KD-KjiGZlp4&t=1039s&ab_channel=TheBreakout"/>
               </div>
-              {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(1); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Youtube</div>
-                    <div className="text-gray-600">Full length interviews and podcasts with deep insights into dynasty fantasy football</div>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(2); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">TikTok</div>
-                    <div className="text-gray-600">Bold 1 minute takes and analysis on player prospects, fantasy moves, and team analysis</div>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(3); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Twitter</div>
-                    <div className="text-gray-600">Engaging the community through deep dive threads, personal interactions, and answering your questions directly</div>
-                  </div>
-                </a>
+              <div className="flex flex-col justify-center text-center">
+              <h1 className="h2 mb-4">Youtube</h1>
+              <p className="text-xl text-gray-600">Full length interviews and podcasts with deep insights into dynasty fantasy football</p>
               </div>
             </div>
+          </div>
 
-            {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>
-              <div className="relative flex flex-col text-center lg:text-right">
-                {/* Item 1 */}
-                <Transition
-                  show={tab === 1}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={require('../images/features-youtube.png').default} width="500" height="462" alt="Features bg" />
+          <div>
+            <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
+            </div>
+          </div>
 
-
-                  </div>
-                </Transition>
-                {/* Item 2 */}
-                <Transition
-                  show={tab === 2}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={require('../images/features-tiktok.png').default} width="500" height="462" alt="Features bg" />
-                  </div>
-                </Transition>
-                {/* Item 3 */}
-                <Transition
-                  show={tab === 3}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={require('../images/features-twitter.png').default} width="500" height="462" alt="Features bg" />
-                  </div>
-                </Transition>
+          <div>
+            <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
+              <div className="flex flex-col justify-center text-center">
+              <h1 className="h2 mb-4">TikTok</h1>
+              <p className="text-xl text-gray-600">Bold 1 minute takes and analysis on player prospects, fantasy moves, and team analysis</p>
               </div>
-            </div >
+              <div className="flex flex-col justify-center">
+                <img className="md:max-w-none mx-auto rounded" src={require('../images/tiktok_thumbnail.png').default} width="500" height="462" alt="Features bg" />
+              </div>
+            </div>
+          </div>
 
+          <div>
+            <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
+            </div>
+          </div>
+
+          <div>
+            <div className="relative flex justify-right mb-8" data-aos="zoom-y-out" data-aos-delay="450">
+            <div className="flex flex-col justify-center">
+              <img className="md:max-w-none mx-auto rounded" src={require('../images/twitter_thumbnail.png').default} width="500" height="462" alt="Features bg" />
+            </div>
+              <div className="flex flex-col justify-center text-center">
+              <h1 className="h2 mb-4">Twitter</h1>
+              <p className="text-xl text-gray-600">Engaging the community through deep dive threads, personal interactions, and answering your questions directly</p>
+              </div>
+            </div>
+          </div>
           </div >
-
         </div >
-      </div >
     </section >
   );
 }
